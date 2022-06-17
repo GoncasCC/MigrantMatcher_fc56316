@@ -22,10 +22,10 @@ public class Main {
         Ajuda aj_martim = mmv.getHelp(martim, "alojamento");
         
         
-        Alojamento al_manel = mmv.regiao((mmv.pessoas((Alojamento) aj_manel, 16)), "Lisboa");
-        Alojamento al2_manel = mmv.regiao((mmv.pessoas((Alojamento) aj2_manel, 3)), "Braga");
-        Item it_diana = mmv.item((Item) aj_diana, "Impressora 3d");
-        Alojamento al_martim =mmv.regiao((mmv.pessoas((Alojamento) aj_martim, 10)), "Braga");
+        mmv.regiao((mmv.pessoas((Alojamento) aj_manel, 16)), "Lisboa");
+        mmv.regiao((mmv.pessoas((Alojamento) aj2_manel, 3)), "Braga");
+        mmv.item((Item) aj_diana, "Impressora 3d");
+        mmv.regiao((mmv.pessoas((Alojamento) aj_martim, 10)), "Braga");
 
         System.out.println(AlojamentosDisp.getList().toString());
         System.out.println(ItemsDisp.getList().toString());
@@ -49,6 +49,7 @@ public class Main {
         System.out.println(AjudasRealizadas.getMapa().toString());
         System.out.println(AlojamentosDisp.getList().toString());
         System.out.println(ItemsDisp.getList().toString());
+        
 
 
 
